@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .flex-container {
+  display: flex;
+  width: 300px;
+  height: 150px;
+  align-items: center;
+  padding: 10px;
+  background-color: #efefef;
+}
+.flex-container_element-1,
+.flex-container_element-2,
+.flex-container_element-3,
+.flex-container_element-4 {
+  flex-basis: 70px;
+  text-align: center;
+  padding: 15px;
+  font-size: 30px;
+}
+.flex-container_element-1 {
+  background: #fe4;
+}
+
+/* переместим 2 flex-элемент в конец */
+.flex-container_element-2 {
+  order: 2;
+  background: rgb(85, 109, 163);
+}
+/* передвинем 3 элемент до 2 */
+.flex-container_element-3 {
+  order: 1;
+  background: rgb(173, 93, 149);
+}
+/* расположим 4 flex-элемент до 1 */
+.flex-container_element-4 {
+  order: -1;
+  background: rgb(88, 212, 130);
+}
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-container_element-1">
+          1
+        </div>
+        <div class="flex-container_element-2">
+          2
+        </div>
+        <div class="flex-container_element-3">
+          3
+        </div>
+        <div class="flex-container_element-4">
+          4
+        </div>
+      </div>
+</body>
+</html>

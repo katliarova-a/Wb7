@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        margin: 0px;
+        text-align: center;
+        font-size: 40px;
+       
+    }
+     header{
+        background-color: bisque;
+        height: 12vh;
+     }
+     .container{
+        display: flex;
+        flex-direction: row;
+     }
+     .section_article{
+        background-color: aquamarine;
+        flex: 0 0 60%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        justify-content: space-around;
+     }
+     .section_article div{
+        background-color:burlywood;
+        width: 45%;
+        margin: 10px;
+        height: 140px;
+     }
+     .section_article div:nth-child(3){
+        width: 95%;
+     }
+     .section_aside{
+        background-color: rgb(82, 189, 155);
+        flex: 0 0 40%;
+        height: 76vh;
+     }
+     .section_footer{
+        background-color: cornflowerblue;
+        height: 12vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: stretch;
+     }
+     .section_footer div{
+        background-color: cadetblue;
+        width: 20%;
+        margin: 10px;
+        
+     }
+    </style>
+</head>
+<body>
+    <header >
+        Шапка страницы 
+      </header>
+      <main class="container">
+          <article class="section_article">
+            <div>ещё 1</div>
+            <div>ещё 2</div>
+            <div>ещё 3</div>
+            </div>
+          </article>
+          <aside class="section_aside">
+             Боковая область 
+          </aside>
+        </div>
+      </main>
+      <footer class="section_footer">
+         <div >секция 1</div>
+         <div >секция 2</div>
+         <div >секция 3</div>
+         <div >секция 4</div>
+      </footer>
+</body>
+</html>
